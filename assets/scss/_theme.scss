@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+// colors
+
+$white : #ffffff;
+$black : #000000;
+$biege :#E4C7A9;
+$dark :#232323;
+$orange:#E84A0F;
+
+// Bg
+$gradient-range:linear-gradient(221.25deg, #FB7822 2.49%, #DD2E03 96.74%);
+
+// Fonts
+$pop: 'Poppins',
+sans-serif;
+$tok-reg:tokRegular;
+$tok-hy:tokHybrid;
+$tok-p:tokPlain;
+$bodoni:bodoni;
+
+@font-face {
+    font-family: tokRegular;
+    src: url(/assets/fonts/TokyoDreams-Regular.woff);
+}
+
+@font-face {
+    font-family: tokHybrid;
+    src: url(/assets/fonts/TokyoDreamsHybrid-Regular.woff);
+}
+
+@font-face {
+    font-family: tokPlain;
+    src: url(/assets/fonts/TokyoDreamsPlain-Regular.woff);
+}
+@font-face {
+    font-family: bodoni;
+    src: url(/assets/fonts/bodoni.ttf);
+}
+
+// Transitions
+$transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);

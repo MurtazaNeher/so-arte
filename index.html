@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So Arte</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/scss/res.css" />
+
+    <!-- Bootsrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="main">
+      <!-- Navbar start -->
+      <nav class="main-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="l-part">
+              <div class="logo-wr">
+                <svg
+                  width="191"
+                  height="51"
+                  viewBox="0 0 191 51"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M30.0736 15.9928C29.2902 19.2022 29.4502 22.7942 29.4596 26.0807C29.4709 29.9897 29.3142 33.7568 28.119 37.5172C26.8189 41.6087 24.2305 44.9498 20.4736 47.054C17.9066 48.4916 14.4925 49.4365 11.5364 49.0479C8.14069 48.6018 4.99719 46.8789 2.81308 44.248C2.50091 45.247 2.25922 46.2675 2.11346 47.3046C2.01955 47.9723 2.02251 48.6189 2.22988 49.2643C2.33136 49.58 2.56807 49.9964 2.18892 50.2333C1.68265 50.5224 1.34871 49.54 1.26347 49.2213C1.06883 48.4929 1.06255 47.6651 1.27786 46.9405C1.45019 45.7452 1.77195 44.5588 2.18136 43.4229C-0.146288 40.0674 -0.629676 35.9984 0.82049 32.1697C2.14409 28.6755 4.40716 25.7148 7.66616 23.8338C9.74602 22.6335 12.4858 21.792 14.9094 22.0069C16.8712 22.1809 18.7546 22.767 20.3629 23.9156C22.9272 22.0422 25.5429 20.0025 27.6281 17.5992C27.8934 15.8979 28.2965 14.1808 28.9915 12.6009C29.4506 11.558 30.8351 10.1956 32.0854 10.6012C33.2059 10.9644 32.4944 12.5792 32.1232 13.2321C31.5314 14.2731 30.89 15.1251 30.0736 15.9928ZM186.308 0.692981L181.747 7.48827L180.712 6.7953L185.274 0L186.308 0.692981ZM105.531 24.3547C104.037 23.7962 102.456 23.3019 100.919 22.8792L89.0068 36.6173C91.0264 37.5357 93.3365 37.9455 95.4527 37.0946C96.4958 36.6752 97.901 35.6708 98.2276 34.5278C98.3357 34.1494 98.5008 33.2841 98.2733 32.9206C98.2071 32.8664 98.08 32.8276 98.013 32.8051C97.8253 32.7584 97.6379 32.6904 97.5414 32.4979L97.5257 32.4664L97.5198 32.4317C97.3645 31.4992 98.5078 31.4033 99.1613 31.5572C100.027 31.7608 100.588 32.4273 100.697 33.2998L100.698 33.3095L100.699 33.3191C100.754 34.6438 100.008 35.6898 99.0244 36.5025C98.0025 37.3787 96.689 38.0373 95.3874 38.3691C92.9833 38.9818 90.5861 38.5275 88.407 37.4143C87.3917 38.6525 86.3486 39.8678 85.3377 41.1083C84.9392 41.5974 84.1862 42.4935 83.9827 43.0899C83.7283 43.8347 84.4637 44.4692 85.1203 44.61L85.3054 44.6496V45.1666H79.3629V44.6048H79.597C80.106 44.6048 80.7898 44.3024 81.1887 43.9958C81.8394 43.531 82.2792 43.1701 82.7855 42.5373L87.6139 36.8966C85.5425 35.6119 83.8078 33.3627 83.4822 30.9269C83.0484 27.6825 85.0709 24.8238 87.7209 23.17C91.5169 20.801 96.3337 20.7542 100.563 21.8012C100.814 21.6051 101.286 21.0794 101.469 20.8865C102.15 20.1687 102.816 19.4335 103.473 18.6937C105.133 16.8252 106.782 14.8847 108.278 12.8827C108.401 12.7179 108.538 12.541 108.633 12.3521C108.862 11.9397 109.138 11.4668 109.625 11.3452C109.952 11.2635 110.165 11.3456 110.371 11.6037C110.557 11.7893 110.165 12.9856 110.096 13.2661C109.564 15.4234 109.099 17.6158 108.642 19.7903C108.428 20.8043 108.218 21.8197 108.018 22.8366C107.954 23.1621 107.807 23.7696 107.769 24.151C110.945 25.6251 113.888 27.7722 115.895 30.6751C117.41 32.866 118.384 35.5171 118.244 38.2071C118.161 39.8093 117.529 41.5286 116.568 42.8096C115.237 44.5863 113.352 45.504 111.137 45.5876C106.513 45.5876 104.245 42.576 103.788 38.1253C103.336 33.7361 104.683 28.6911 105.531 24.3547ZM58.2301 43.6424C49.8136 48.0684 39.5313 44.5398 35.0821 36.247C30.6441 27.9753 33.4219 17.6079 41.8233 13.1899C50.2398 8.76391 60.5221 12.2925 64.9713 20.5853C69.4093 28.857 66.6316 39.2244 58.2301 43.6424ZM132.991 33.6352C136.321 34.7748 138.486 36.8453 140.437 39.8694C141.112 40.9148 141.757 42.1142 142.537 43.0742C143.123 43.7948 143.802 44.3708 144.773 44.3708H145.007V45.1666H144.773C141.129 45.1666 139.707 42.6972 137.978 39.9513C135.893 36.6412 133.964 34.5348 129.877 33.9374H124.514V41.1893C124.514 42.177 124.822 44.4288 125.972 44.7048L126.174 44.7533L126.126 45.1666H120.469L120.42 44.7533L120.622 44.7048C121.772 44.4288 122.081 42.177 122.081 41.1893V14.0629C122.005 13.2404 121.872 12.5842 120.961 12.4107L120.751 12.3709L120.791 11.9465H129.569C136.546 12.0794 143.448 14.2923 143.51 22.4254C143.559 28.7543 138.738 32.5568 132.991 33.6352ZM159.324 13.0231V41.1893C159.324 42.177 159.633 44.4288 160.782 44.7048L160.985 44.7533L160.936 45.1666H155.279L155.231 44.7533L155.433 44.7048C156.583 44.4288 156.891 42.177 156.891 41.1893V13.0231H150.107C147.881 13.0231 146.654 15.2568 146.409 17.216L146.383 17.4212H145.849V11.9465H170.366V17.4212H169.832L169.806 17.216C169.562 15.2566 168.335 13.0231 166.108 13.0231H159.324ZM177.151 13.0231V27.9013H181.221C183.164 27.9013 184.624 26.4631 184.92 24.5897L184.951 24.3921H185.479V32.3466H184.951L184.92 32.149C184.624 30.2756 183.164 28.8375 181.221 28.8375H177.151V44.09H186.555C188.769 44.09 190.19 41.8934 190.44 39.8971L190.466 39.6919H191V45.1666H173.106L173.057 44.7533L173.259 44.7048C174.409 44.4288 174.717 42.177 174.717 41.1893V14.0629C174.642 13.2404 174.509 12.5842 173.598 12.4107L173.388 12.3709L173.428 11.9465H191V17.4212H190.466L190.44 17.216C190.195 15.2568 188.968 13.0231 186.742 13.0231H177.151ZM30.4009 13.9085C30.6266 13.55 30.8472 13.1856 31.069 12.8476C31.1777 12.6819 31.7448 11.6155 31.4972 11.5056C31.1954 11.3714 30.7122 12.6211 30.6489 12.8487C30.5618 13.1965 30.478 13.5515 30.4009 13.9085ZM27.4288 19.1151C25.5538 21.1204 23.2346 22.8491 21.0247 24.4523C23.3591 26.4676 24.4726 29.4636 23.9154 32.5286C23.6268 34.1152 21.8188 36.2859 20.2337 36.6907C19.8645 36.785 19.3564 36.704 19.542 36.2128C19.6476 35.9329 19.9898 35.642 20.2298 35.4759C21.763 34.4145 22.3409 32.4896 22.2579 30.6963C22.1649 28.6829 21.2804 26.701 19.8267 25.3015C16.6288 27.538 13.2727 29.8327 10.5659 32.6489C7.71007 35.6204 4.78704 39.2545 3.2236 43.1203C5.2756 45.8651 8.59014 47.7319 12.0076 48.0212C15.0009 48.2745 18.0863 47.066 20.4516 45.2919C23.5208 42.9899 25.5825 39.6781 26.5464 35.9837C27.2421 33.3171 27.3838 30.5948 27.3532 27.8519C27.3264 25.4517 27.1331 22.9778 27.288 20.5874C27.32 20.0953 27.37 19.6045 27.4288 19.1151ZM2.63375 42.2781C4.28152 38.4707 7.16045 34.949 9.99436 31.997C12.6288 29.2528 16.0792 26.9845 19.1817 24.7561C17.9817 23.8276 16.5716 23.3172 15.0541 23.175C11.8251 22.8724 8.87057 23.8436 6.39441 25.9185C4.27746 27.6923 2.62914 30.1922 1.72841 32.7972C0.612927 36.0239 0.859973 39.3788 2.63375 42.2781ZM105.778 23.3336L108.021 14.726L107.755 15.0459L101.629 22.1172C103.018 22.5141 104.416 22.8364 105.778 23.3336ZM88.1578 36.1619L99.8899 22.618C95.9619 21.7829 91.3979 21.796 87.952 24.084C85.6224 25.6308 84.0037 28.2286 84.4602 31.093C84.8235 33.3719 86.2615 35.0036 88.1578 36.1619ZM107.518 25.1087C107.123 27.2664 106.725 29.4275 106.425 31.6003C106.169 33.4571 105.918 35.6031 106.078 37.4731C106.375 40.9332 107.348 44.6048 111.46 44.6048C114.788 44.6048 116.852 41.5875 117.169 38.5451C117.446 35.8811 116.465 33.2664 114.938 31.1195C113.079 28.5057 110.394 26.4934 107.518 25.1087ZM57.6845 42.6666C61.2063 40.8113 63.6079 37.6713 64.5105 33.811C65.4538 29.7762 64.6367 25.5427 62.6874 21.9304C60.7181 18.2804 57.6251 15.1642 53.7374 13.6094C49.9848 12.1089 45.9662 12.2843 42.3683 14.1661C34.4549 18.3042 33.3808 27.5166 37.366 34.9021C39.3455 38.5707 42.4938 41.6491 46.4026 43.1875C50.1165 44.6491 54.134 44.5371 57.6845 42.6666ZM124.514 33.0481H129.518C135.982 32.9607 141.128 29.3135 141.077 22.4759C141.058 19.9852 140.589 17.4594 138.745 15.6524C136.432 13.3865 132.596 12.8974 129.518 12.8358H124.514V33.0481Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="m-part">
+              <ul class="nav-list">
+                <li><a href="javfascript:void(0)"> Portfolio </a></li>
+                <li><a href="javfascript:void(0)"> Services </a></li>
+                <li><a href="javfascript:void(0)"> About Us </a></li>
+                <li><a href="javfascript:void(0)"> Career </a></li>
+                <li><a href="javfascript:void(0)"> Contact Us </a></li>
+              </ul>
+            </div>
+            <div class="r-part">
+              <a href="javascript:void(0)" class="main-btn">Fill the form</a>
+              <div id="toggle-nav" class="hide-desktop">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mob-nav hide-desktop">
+            <ul class="nav-list">
+              <li><a href="javfascript:void(0)"> Portfolio </a></li>
+              <li><a href="javfascript:void(0)"> Services </a></li>
+              <li><a href="javfascript:void(0)"> About Us </a></li>
+              <li><a href="javfascript:void(0)"> Career </a></li>
+              <li><a href="javfascript:void(0)"> Contact Us </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+
+      <!-- Header start -->
+      <section class="sec header-sec">
+        <div class="container pt-100">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-9 col-sm-12 col-12 text-center">
+              <div class="sec-head">
+                <h1 class="title">
+                  Tworzymy
+                  <span class="orange"> piekne & skuteczne marki </span>
+                </h1>
+                <img src="assets/images/title-ovr.svg" alt="" class="ovr" />
+              </div>
+              <p class="para pb-20">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the
+              </p>
+              <button class="main-btn">Fill the form</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Header end -->
+
+      <!-- Service sec start -->
+      <section class="sec serv-sec dark-bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-8 col-sm-12 col-12">
+              <div class="sec-head">
+                <h4 class="sub left">Services</h4>
+                <h1 class="title left">Let us take</h1>
+                <h1 class="title right">
+                  <span class="sub-title right"> care of </span>
+                  your brand
+                </h1>
+              </div>
+            </div>
+
+            <div class="col-12 mt-60">
+              <div class="serv-card-wr">
+                <div class="serv-card">
+                  <div class="sc-body">
+                    <img src="assets/images/s1.png" alt="" />
+                    <div class="sc-con">
+                      <ul>
+                        <li class="sc-title">We create effective brands.</li>
+                        <li>
+                          <span class="count"> 01</span>social media marketing
+                        </li>
+                        <li><span class="count"> 02</span>content marketing</li>
+                        <li><span class="count"> 03 </span>scopywriting</li>
+                        <li><span class="count"> 05</span>email marketing</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sc-name">DESIGN</div>
+                </div>
+                <div class="serv-card">
+                  <div class="sc-body">
+                    <img src="assets/images/s2.png" alt="" />
+                    <div class="sc-con">
+                      <ul>
+                        <li class="sc-title">We create effective brands.</li>
+                        <li>
+                          <span class="count"> 01</span>social media marketing
+                        </li>
+                        <li><span class="count"> 02</span>content marketing</li>
+                        <li><span class="count"> 03 </span>scopywriting</li>
+                        <li><span class="count"> 05</span>email marketing</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sc-name">DESIGN</div>
+                </div>
+                <div class="serv-card">
+                  <div class="sc-body">
+                    <img src="assets/images/s3.png" alt="" />
+                    <div class="sc-con">
+                      <ul>
+                        <li class="sc-title">We create effective brands.</li>
+                        <li>
+                          <span class="count"> 01</span>social media marketing
+                        </li>
+                        <li><span class="count"> 02</span>content marketing</li>
+                        <li><span class="count"> 03 </span>scopywriting</li>
+                        <li><span class="count"> 05</span>email marketing</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sc-name">DESIGN</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service sec end -->
+
+      <!-- portfolio sec start -->
+      <section class="sec port-sec dark-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="l-part">
+                <div class="sec-head">
+                  <h4 class="sub left dark">Our work</h4>
+                  <h1 class="title right dark">Portfolio</h1>
+                  <p class="para dark pt-20">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <a href="javascript:void(0)" class="main-btn sm"
+                    >Logo Design</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- portfolio sec end -->
+
+      <!-- About sec start -->
+      <section class="sec about-sec dark-bg">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="l-part">
+                <img src="assets/images/about-img.png" alt="" />
+                <img src="assets/images/title-ovr.svg" alt="" class="ovr" />
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12 col-12">
+              <div class="r-part">
+                <div class="sec-head">
+                  <h1 class="sub left">About Us</h1>
+                  <h1 class="title">
+                    POZNAJ <span class="orange"> SO ARTÉ </span>
+                  </h1>
+                </div>
+
+                <p class="para tokyo">
+                  Kameralne studio kreatywne, które ceni sobie indywidualne
+                  podejście do Klienta.
+                </p>
+
+                <p class="para">
+                  SO ARTÉ to kompleksowa obsługa Twojego biznesu na płaszczyźnie
+                  graficznej i marketingowej.
+                </p>
+
+                <p class="para">
+                  To coś więcej niż standardowe kreowanie wizerunku i budowanie
+                  długofalowej strategii marketingowej.
+                </p>
+
+                <p class="para">
+                  SO ARTÉ to odpowiedź na pytanie: Jak stworzyć piękną i
+                  skuteczną markę.
+                </p>
+
+                <a href="javascript:void(0)" class="main-btn mt-40"
+                  >Wypełnij Brief</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About sec end -->
+
+      <!-- Strength sec start -->
+      <section class="sec str-sec dark-bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12 col-12">
+              <div class="sec-head">
+                <h1 class="title center">
+                  <img src="assets/images/str-icon.svg" alt="" />
+                  NASZE <span class="orange"> MOCNE STRONY </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="str-content-wr">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-12">
+                <div class="str-card-wr">
+                  <div class="str-card">
+                    <h1 class="str-title">INDYWIDUALNE PODEJŚCIE</h1>
+                    <p class="str-txt">
+                      Każdy Klient jest dla nas na wagę złota, dlatego cenimy
+                      sobie indywidualne podejście. Wiemy, że każdy z nas jest
+                      inny, dlatego ważne jest, aby potrafić “czytać mu w
+                      myślach”. Nasz proces kreatywny przebiega w sposób
+                      zapewniający indywidualność oraz nieszablonowość.
+                    </p>
+                  </div>
+                  <div class="str-card">
+                    <h1 class="str-title">KOMPLEKSOWOŚĆ</h1>
+                    <p class="str-txt">
+                      Do swojej pracy podchodzimy w holistyczny sposób.
+                      Kreatywna strona biznesu to całokształt elementów, a nie
+                      tylko ich fragment. Żeby móc skupić się na części
+                      zagadnień, ważne jest to aby widzieć ich całość. To
+                      właśnie tutaj kreatywność spotyka się z efektywnością.
+                    </p>
+                  </div>
+                  <div class="str-card">
+                    <h1 class="str-title">CIĄGŁY ROZWÓJ</h1>
+                    <p class="str-txt">
+                      Jako młode i ambitne osoby, stawiamy na ciągły rozwój.
+                      Nauka to klucz do sukcesu, a wiedza to coś czego nam nikt
+                      nie odbierze. Śledzimy ciągle zmieniające się trendy oraz
+                      nowe rozwiązania, które ułatwiają pracę naszym Klientom.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Strength sec end -->
+
+      <!-- Testimonial sec start -->
+      <section class="sec biege-bg test-sec">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-12 col-12 text-center">
+              <div class="sec-head">
+                <h1 class="sub dark left">About Us</h1>
+                <h1 class="title dark">
+                  Opinie <span class="orange"> o nas</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test-swiper-con mt-20">
+          <div class="swiper testSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="test-card">
+                  <img
+                    src="assets/images/test-icon.svg"
+                    alt=""
+                    class="test-icon"
+                  />
+                  <p class="txt">
+                    Studio artystyczne SO ARTÉ Studio Kreatywne oraz Naszą
+                    dotychczasową współpracę uważam za jedną z najlepszych
+                    inwestycji wizerunkowych jakich dokonałem. W dobie świata
+                    opartego na relacjach społecznościowych wizerunek medialny
+                    ma kluczowe znaczenie dla rozwoju i dobrze prosperującego
+                    biznesu, zwłaszcza z zakresu działalności artystycznej.
+                    Efektem współpracy jest moje unikatowe logo które dzięki
+                    profesjonalnemu podejściu jest spełnieniem moich oczekiwań i
+                    zdobi moją firmę oraz wizerunek społecznościowy. Z całego
+                    serca polecam współpracę z SO ARTÉ Studio Kreatywne
+                  </p>
+                  <div class="name">
+                    <img src="assets/images/test01.png" alt="" />
+                    <span>Marcin Haduch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="test-card">
+                  <img
+                    src="assets/images/test-icon.svg"
+                    alt=""
+                    class="test-icon"
+                  />
+                  <p class="txt">
+                    Studio artystyczne SO ARTÉ Studio Kreatywne oraz Naszą
+                    dotychczasową współpracę uważam za jedną z najlepszych
+                    inwestycji wizerunkowych jakich dokonałem. W dobie świata
+                    opartego na relacjach społecznościowych wizerunek medialny
+                    ma kluczowe znaczenie dla rozwoju i dobrze prosperującego
+                    biznesu, zwłaszcza z zakresu działalności artystycznej.
+                    Efektem współpracy jest moje unikatowe logo które dzięki
+                    profesjonalnemu podejściu jest spełnieniem moich oczekiwań i
+                    zdobi moją firmę oraz wizerunek społecznościowy. Z całego
+                    serca polecam współpracę z SO ARTÉ Studio Kreatywne
+                  </p>
+                  <div class="name">
+                    <img src="assets/images/test01.png" alt="" />
+                    <span>Marcin Haduch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="test-card">
+                  <img
+                    src="assets/images/test-icon.svg"
+                    alt=""
+                    class="test-icon"
+                  />
+                  <p class="txt">
+                    Studio artystyczne SO ARTÉ Studio Kreatywne oraz Naszą
+                    dotychczasową współpracę uważam za jedną z najlepszych
+                    inwestycji wizerunkowych jakich dokonałem. W dobie świata
+                    opartego na relacjach społecznościowych wizerunek medialny
+                    ma kluczowe znaczenie dla rozwoju i dobrze prosperującego
+                    biznesu, zwłaszcza z zakresu działalności artystycznej.
+                    Efektem współpracy jest moje unikatowe logo które dzięki
+                    profesjonalnemu podejściu jest spełnieniem moich oczekiwań i
+                    zdobi moją firmę oraz wizerunek społecznościowy. Z całego
+                    serca polecam współpracę z SO ARTÉ Studio Kreatywne
+                  </p>
+                  <div class="name">
+                    <img src="assets/images/test01.png" alt="" />
+                    <span>Marcin Haduch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="test-card">
+                  <img
+                    src="assets/images/test-icon.svg"
+                    alt=""
+                    class="test-icon"
+                  />
+                  <p class="txt">
+                    Studio artystyczne SO ARTÉ Studio Kreatywne oraz Naszą
+                    dotychczasową współpracę uważam za jedną z najlepszych
+                    inwestycji wizerunkowych jakich dokonałem. W dobie świata
+                    opartego na relacjach społecznościowych wizerunek medialny
+                    ma kluczowe znaczenie dla rozwoju i dobrze prosperującego
+                    biznesu, zwłaszcza z zakresu działalności artystycznej.
+                    Efektem współpracy jest moje unikatowe logo które dzięki
+                    profesjonalnemu podejściu jest spełnieniem moich oczekiwań i
+                    zdobi moją firmę oraz wizerunek społecznościowy. Z całego
+                    serca polecam współpracę z SO ARTÉ Studio Kreatywne
+                  </p>
+                  <div class="name">
+                    <img src="assets/images/test01.png" alt="" />
+                    <span>Marcin Haduch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="test-card">
+                  <img
+                    src="assets/images/test-icon.svg"
+                    alt=""
+                    class="test-icon"
+                  />
+                  <p class="txt">
+                    Studio artystyczne SO ARTÉ Studio Kreatywne oraz Naszą
+                    dotychczasową współpracę uważam za jedną z najlepszych
+                    inwestycji wizerunkowych jakich dokonałem. W dobie świata
+                    opartego na relacjach społecznościowych wizerunek medialny
+                    ma kluczowe znaczenie dla rozwoju i dobrze prosperującego
+                    biznesu, zwłaszcza z zakresu działalności artystycznej.
+                    Efektem współpracy jest moje unikatowe logo które dzięki
+                    profesjonalnemu podejściu jest spełnieniem moich oczekiwań i
+                    zdobi moją firmę oraz wizerunek społecznościowy. Z całego
+                    serca polecam współpracę z SO ARTÉ Studio Kreatywne
+                  </p>
+                  <div class="name">
+                    <img src="assets/images/test01.png" alt="" />
+                    <span>Marcin Haduch</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial sec end -->
+
+      <!-- Form sec start -->
+      <section class="sec form-sec dark-bg">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+              <div class="l-part">
+                <img src="assets/images/form-sec-img.png" alt="" />
+                <img src="assets/images/title-ovr.svg" alt="" class="ovr" />
+              </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 col-md-6 col-sm-12 col-12">
+              <div class="r-part">
+                <div class="sec-head">
+                  <h1 class="title sm">
+                    Stwórzmy razem <span class="orange"> coś pięknego! </span>
+                  </h1>
+                </div>
+
+                <ul class="social-list mt-20">
+                  <li>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 21.25H7C3.35 21.25 1.25 19.15 1.25 15.5V8.5C1.25 4.85 3.35 2.75 7 2.75H17C20.65 2.75 22.75 4.85 22.75 8.5V15.5C22.75 19.15 20.65 21.25 17 21.25ZM7 4.25C4.14 4.25 2.75 5.64 2.75 8.5V15.5C2.75 18.36 4.14 19.75 7 19.75H17C19.86 19.75 21.25 18.36 21.25 15.5V8.5C21.25 5.64 19.86 4.25 17 4.25H7Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M11.9998 12.87C11.1598 12.87 10.3098 12.61 9.65978 12.08L6.52978 9.57997C6.20978 9.31997 6.14978 8.84997 6.40978 8.52997C6.66978 8.20997 7.13978 8.14997 7.45978 8.40997L10.5898 10.91C11.3498 11.52 12.6398 11.52 13.3998 10.91L16.5298 8.40997C16.8498 8.14997 17.3298 8.19997 17.5798 8.52997C17.8398 8.84997 17.7898 9.32997 17.4598 9.57997L14.3298 12.08C13.6898 12.61 12.8398 12.87 11.9998 12.87Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <svg
+                      width="11"
+                      height="21"
+                      viewBox="0 0 11 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.75 7H0V10.5H2.75V21H7.33333V10.5H10.6333L11 7H7.33333V5.5125C7.33333 4.725 7.51667 4.375 8.34167 4.375H11V0H7.51667C4.21667 0 2.75 1.4 2.75 4.025V7Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.5 1.925C13.3 1.925 13.65 1.925 14.7875 2.0125C17.675 2.1 18.9875 3.5 19.075 6.3C19.1625 7.4375 19.1625 7.7 19.1625 10.5C19.1625 13.3 19.1625 13.65 19.075 14.7C18.9875 17.5 17.5875 18.9 14.7875 18.9875C13.65 19.075 13.3875 19.075 10.5 19.075C7.7 19.075 7.35 19.075 6.3 18.9875C3.4125 18.9 2.1 17.5 2.0125 14.7C1.925 13.5625 1.925 13.3 1.925 10.5C1.925 7.7 1.925 7.35 2.0125 6.3C2.1 3.5 3.5 2.1 6.3 2.0125C7.35 1.925 7.7 1.925 10.5 1.925ZM10.5 0C7.6125 0 7.2625 0 6.2125 0.0875C2.3625 0.2625 0.2625 2.3625 0.0875 6.2125C0 7.2625 0 7.6125 0 10.5C0 13.3875 0 13.7375 0.0875 14.7875C0.2625 18.6375 2.3625 20.7375 6.2125 20.9125C7.2625 21 7.6125 21 10.5 21C13.3875 21 13.7375 21 14.7875 20.9125C18.6375 20.7375 20.7375 18.6375 20.9125 14.7875C21 13.7375 21 13.3875 21 10.5C21 7.6125 21 7.2625 20.9125 6.2125C20.7375 2.3625 18.6375 0.2625 14.7875 0.0875C13.7375 0 13.3875 0 10.5 0ZM10.5 5.075C7.525 5.075 5.075 7.525 5.075 10.5C5.075 13.475 7.525 15.925 10.5 15.925C13.475 15.925 15.925 13.475 15.925 10.5C15.925 7.525 13.475 5.075 10.5 5.075ZM10.5 14C8.575 14 7 12.425 7 10.5C7 8.575 8.575 7 10.5 7C12.425 7 14 8.575 14 10.5C14 12.425 12.425 14 10.5 14ZM16.1 3.675C15.4 3.675 14.875 4.2 14.875 4.9C14.875 5.6 15.4 6.125 16.1 6.125C16.8 6.125 17.325 5.6 17.325 4.9C17.325 4.2 16.8 3.675 16.1 3.675Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <svg
+                      width="22"
+                      height="18"
+                      viewBox="0 0 22 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.9188 18C15.2211 18 19.7613 11.0755 19.7613 5.07125C19.7613 4.87451 19.7573 4.67879 19.7483 4.48382C20.6296 3.84248 21.3957 3.04194 22 2.13107C21.1913 2.4928 20.321 2.73639 19.408 2.84622C20.3398 2.28372 21.0554 1.39351 21.393 0.332508C20.5207 0.853184 19.5549 1.23154 18.527 1.43558C17.703 0.552416 16.53 0 15.2321 0C12.7391 0 10.7176 2.0351 10.7176 4.54352C10.7176 4.90021 10.7574 5.24682 10.8345 5.57958C7.08345 5.3899 3.75704 3.58151 1.53109 0.832277C1.143 1.50359 0.919555 2.28397 0.919555 3.116C0.919555 4.69239 1.7165 6.08413 2.92831 6.89853C2.18791 6.8756 1.49231 6.67056 0.884023 6.32999C0.883023 6.34888 0.883023 6.36803 0.883023 6.38793C0.883023 8.58877 2.43913 10.4261 4.50419 10.8425C4.12511 10.9466 3.72626 11.0025 3.3144 11.0025C3.02365 11.0025 2.7409 10.9733 2.46591 10.9206C3.04041 12.7257 4.70687 14.0396 6.6826 14.0767C5.1375 15.2956 3.19129 16.0218 1.07669 16.0218C0.712623 16.0218 0.353309 16.0009 0 15.9589C1.9975 17.2476 4.36932 18 6.9188 18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+                <div class="form-wr">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-6">
+                        <input type="text" placeholder="Your Name" />
+                      </div>
+                      <div class="col-6">
+                        <input type="email" placeholder="Your Email" />
+                      </div>
+                      <div class="col-6">
+                        <input type="text" placeholder="Company Name" />
+                      </div>
+                      <div class="col-6">
+                        <input type="email" placeholder="Company Name" />
+                      </div>
+                      <div class="col-12">
+                        <textarea
+                          name="
+                        "
+                          id=""
+                          rows="3"
+                          placeholder="Your Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <a href="javascript:void(0)" class="main-btn">Wyślij</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tnc">
+            <div class="row align-items-center">
+              <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <h1 class="tnc-title">TERMS <span>AND</span> CONDITIONS</h1>
+              </div>
+              <div
+                class="col-lg-8 offset-lg-1 offset-md-1 col-md-7 col-sm-12 col-12"
+              >
+                <div class="tnc-grid">
+                  <div class="tnc-card">
+                    <span class="ttl">50%</span>
+                    <span class="txt"
+                      >przedpłaty przed rozpoczęciem pracy
+                    </span>
+                  </div>
+                  <div class="tnc-card">
+                    <span class="ttl">3</span>
+                    <span class="txt">poprawki w cenie </span>
+                  </div>
+                  <div class="tnc-card">
+                    <span class="ttl">100%</span>
+                    <span class="txt">zadowolenia klientów </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Form sec end -->
+    </div>
+
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $("#toggle-nav").click(function () {
+        $(".mob-nav").slideToggle();
+        $("#toggle-nav").toggleClass("on");
+      });
+    </script>
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".testSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.50": {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

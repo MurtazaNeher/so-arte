@@ -1,0 +1,18 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 479px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) and (min-width: 480px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px)and(min-width: 769px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1080px) {
+  .hide-desktop{
+    display: none !important; 
+  }
+}
